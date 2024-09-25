@@ -1,0 +1,83 @@
+/***** Css reset *****/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+/***** End css reset *****/
+
+body {
+  background: rgb(245,214,211) no-repeat center center fixed;
+  background: -moz-linear-gradient(180deg, rgba(245,214,211,1) 34%, rgba(233,185,185,1) 47%, rgba(114,87,96,1) 82%) no-repeat center center fixed;
+  background: -webkit-linear-gradient(180deg, rgba(245,214,211,1) 34%, rgba(233,185,185,1) 47%, rgba(114,87,96,1) 82%) no-repeat center center fixed;
+  background: linear-gradient(180deg, rgba(245,214,211,1) 34%, rgba(233,185,185,1) 47%, rgba(114,87,96,1) 82%) no-repeat center center fixed;
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+.ph::placeholder {
+  user-select: none;
+}
+
+.ph {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+}
+
+.fgtpass::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.781);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.fgtpass:hover::after {
+  width: 100%;
+}
+
+
+.register::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.781);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.register:hover::after {
+  width: 100%;
+}
+
+
+
+input {
+  overflow: hidden;
+}
+
+form{
+  margin-bottom: 1em;
+}

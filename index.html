@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body class="w-full h-screen bg-no-repeat bg-cover bg-center text-white poppins flex items-center justify-center">
+    <div
+        class="flex border-[0.2px] border-white max-[600px]:max-w-full max-[600px]:h-fit max-[430px]:h-fit max-[430px]:p-[30px] border-solid flex-col justify-center items-center h-[400px] w-[400px] rounded-3xl">
+
+        <h1 id="login" class="mb-[1.1em] text-4xl font-bold">Login</h1>
+
+        <form class="formulario-login" autocomplete="off">
+
+            <div class="flex items-center flex-col justify-center w-full max-[430px]:m-auto">
+                <div
+                    class="border-2 border-white border-solid flex mb-5 items-center flex-row justify-center rounded-3xl w-4/5 pr-3">
+                    <input type="text"
+                        class="h-10 w-[95%] placeholder:text-white placeholder:opacity-70 placeholder:text-base poppins bg-transparent p-[10px] ph"
+                        id="usuario" placeholder="Username" required>
+                    <i class="material-symbols-outlined select-none" id="user">
+                        person
+                    </i>
+                </div>
+                <div
+                    class="border-2 border-white border-solid w-4/5  flex mb-5 items-center flex-row justify-center rounded-3xl pr-3">
+                    <input type="password" id="pwd" placeholder="Password"
+                        class="h-10 w-[95%] p-[10px] bg-transparent placeholder:text-white placeholder:opacity-70 placeholder:text-base poppins"
+                        required>
+                    <i class="material-symbols-outlined select-none cursor-pointer" id="toggler">lock</i>
+                    <br />
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap justify-center max-w-full p-[10px] mb-0">
+                <div class="flex-row flex max-[330px]:flex-col max-[330px]:flex-wrap max-[330px]:gap-1">
+                    <div class="max-[430px]:flex-row max-[430px]:justify-center max-[430px]:items-center">
+                        <input type="checkbox" name="rmbchck" id="remember" class="mr-1" value="pass">
+                        <label for="remember" class="mr-8 select-none"> Remember me</label>
+                    </div>
+                    <a href="#" class="fgtpass text-white relative select-none">Forget Password?</a>
+                </div> 
+                <br />
+                <input type="submit"
+                    class="submit max-[430px]:mt-[1.2em] max-[430px]:max-w-[80%] max-[430px]:flex max-[430px]:m-auto hover:bg-pink-700 hover:transition-colors duration-1000 flex items-center justify-center cursor-pointer w-[320px] h-10 rounded-3xl poppins font-semibold mt-4 text-[medium] bg-pink-300"
+                    value="Login" />
+            </div>
+        </form>
+        <p>Don't have a account? <a href="#" class="register after:bg-none after:bottom-0 after:content-none after:block relative text-white no-underline font-bold">Register</a></p>
+    </div>
+
+    <script src="js/script.js" async defer></script>
+</body>
+
+</html>
